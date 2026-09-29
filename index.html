@@ -1,0 +1,39 @@
+<!doctype html><html lang="en"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Samia’s Closet</title><meta name="description" content="Samia’s Closet — premium fashion store.">
+<link rel="stylesheet" href="site.css"></head><body>
+<div class="topbar">Free delivery offers · Easy ordering · Secure checkout · WhatsApp support</div>
+<header class="nav">
+<a class="brand" href="#home"><img src="logo.jpg" alt="Samia’s Closet"></a>
+<nav><a href="#home">Home</a><a href="#new">Shop</a><a href="#collections">Collections</a><a href="#offers">Offers</a><a href="#support">Contact</a></nav>
+<div class="navActions"><button id="searchBtn" class="iconbtn">⌕</button><button id="wishBtn" class="iconbtn">♡ <span id="wishCount">0</span></button><button id="cartBtn" class="iconbtn">Bag <span id="cartCount">0</span></button></div>
+</header>
+<main id="home">
+<section class="hero" id="hero"><div class="heroCopy">
+<p class="eyebrow">SAMIA’S CLOSET · PREMIUM FASHION</p><h1 id="heroTitle">STYLE THAT FEELS LIKE YOU</h1>
+<p id="heroSubtitle">A curated fashion destination for every style, every day.</p>
+<div class="heroButtons"><button class="goldbtn" id="heroButton">SHOP COLLECTION</button><a class="outlinebtn" id="directContact" target="_blank">DIRECT CONTACT WITH RAHI</a></div>
+<div class="ownerLine">Owner: <b>Md.Humaun Husen Rahi</b></div>
+</div><div class="heroBadge"><span>SC</span><small>CURATED<br>FASHION</small></div></section>
+
+<section class="featureStrip"><div>🚚 <b>Delivery</b><small>Across Bangladesh</small></div><div>↻ <b>Easy Support</b><small>Order assistance</small></div><div>✓ <b>Quality Picks</b><small>Curated products</small></div><div>💬 <b>WhatsApp</b><small>Direct chat</small></div></section>
+
+<section class="section" id="new"><div class="sectionHead"><div><p class="eyebrow">SHOP</p><h2>Latest Collection</h2></div>
+<div class="tools"><input id="search" placeholder="Search products…"><select id="category"><option value="">All categories</option></select><select id="sort"><option value="">Sort</option><option value="low">Price: Low to High</option><option value="high">Price: High to Low</option><option value="new">Newest</option></select></div></div>
+<div id="chips" class="chips"></div><div id="products" class="productGrid"></div><div id="empty" class="empty" hidden>No products found.</div></section>
+
+<section class="editorial" id="collections"><div><p class="eyebrow">COLLECTIONS</p><h2>Find your next favorite piece.</h2><p>Explore the latest drops, everyday essentials, statement pieces and seasonal offers — all in one place.</p><a href="#new" class="textlink">Browse all products →</a></div><div class="collectionTiles"><div>NEW<br>ARRIVALS</div><div>BEST<br>SELLERS</div><div>OFFERS</div></div></section>
+
+<section class="section" id="offers"><div class="sectionHead"><div><p class="eyebrow">DEALS</p><h2>Offers & Promotions</h2></div></div><div class="offerGrid"><div><b>NEW DROP</b><span>Fresh products added regularly</span></div><div><b>COMBO DEALS</b><span>Save more when you shop together</span></div><div><b>FREE DELIVERY</b><span>Selected offers and campaigns</span></div></div></section>
+
+<section class="story" id="story"><div><p class="eyebrow">ABOUT</p><h2>Built around good style and easy shopping.</h2></div><p id="aboutText">Samia’s Closet is a premium fashion store with carefully selected products for different styles and collections.</p></section>
+
+<section class="support" id="support"><div><p class="eyebrow">DIRECT CONTACT</p><h2>Talk directly with Rahi.</h2><p id="deliveryText">For product questions, orders or support, message us directly on WhatsApp.</p><div class="ownerCard">Owner: <b>Md.Humaun Husen Rahi</b></div></div>
+<a id="waLink" class="goldbtn" target="_blank">WHATSAPP</a></section></main>
+
+<footer><img src="logo.jpg" alt="Samia’s Closet"><div><a id="fb" target="_blank">Facebook</a><a id="ig" target="_blank">Instagram</a><a id="tt" target="_blank">TikTok</a></div><small>© Samia’s Closet</small></footer>
+
+<div id="cartDrawer" class="drawer"><div class="drawerHead"><h3>Your Bag</h3><button id="closeCart">×</button></div><div id="cartItems"></div><div class="cartTotal"><span>Total</span><strong id="cartTotal">৳0</strong></div><button id="checkout" class="goldbtn full">CHECKOUT</button></div><div id="shade" class="shade"></div>
+<div id="searchModal" class="modal"><div class="modalCard"><button class="modalClose" id="closeSearch">×</button><p class="eyebrow">SEARCH</p><h2>Find a product</h2><input id="searchModalInput" placeholder="Type product name…"></div></div>
+<div id="orderModal" class="modal"><div class="modalCard"><button class="modalClose" id="closeOrder">×</button><p class="eyebrow">CHECKOUT</p><h2>Place your order</h2><form id="orderForm"><input name="name" required placeholder="Your name"><input name="phone" required placeholder="Phone number"><textarea name="address" required placeholder="Delivery address"></textarea><select name="payment"><option>Cash on Delivery</option><option>Online Payment</option></select><input name="coupon" placeholder="Coupon code (optional)"><button class="goldbtn full">CONFIRM ORDER</button></form><p id="orderMsg"></p></div></div>
+<script type="module" src="site.js"></script></body></html>

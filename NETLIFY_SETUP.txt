@@ -1,0 +1,12 @@
+Samia's Closet — Netlify setup
+
+Target site name:
+samias-closet
+
+Target URL:
+https://samias-closet.netlify.app
+
+Upload this project folder to Netlify Drop or deploy it from a Git repository.
+
+Important:
+The Firebase configuration still needs to be filled in with your own Firebase project details before Google login/database features can work.
